@@ -1,10 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Primera Página</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Padilla | Data & Industrial Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb496ab1bd.js" crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --primary: #1a2a6c; /* Azul corporativo */
+            --secondary: #b21f1f;
+            --text-dark: #2c3e50;
+            --text-light: #ecf0f1;
+            --bg-light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, #1a2a6c, #2a4858);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+        .subtitle { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
+
+        /* Tarjetas y Secciones */
+        .section { margin: 40px 0; }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+
+        h2 { border-left: 5px solid var(--primary); padding-left: 15px; color: var(--primary); }
+
+        .tag {
+            display: inline-block;
+            background: #e1e8f0;
+            color: #1a2a6c;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 5px;
+            font-weight: 600;
+        }
+
+        .contact-info a { color: white; text-decoration: none; margin: 0 10px; font-size: 1.1rem; }
+        
+        /* Logros destacados */
+        .highlight-box {
+            background: #f0f4ff;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            font-style: italic;
+        }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: #7f8c8d; }
+    </style>
 </head>
 <body>
-    <h1>¡Hola Mundo! Mi sitio ya está en GitHub</h1>
-    <p>Este es un tutorial paso a paso.</p>
+
+<header>
+    <div class="container">
+        <h1>Andrés César Padilla Díaz</h1>
+        <p class="subtitle">Ingeniería Industrial | Ciencia de Datos | Machine Learning</p>
+        <div class="contact-info">
+            <a href="mailto:c.padilla@pucp.edu.pe"><i class="fas fa-envelope"></i> Email</a>
+            <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <span><i class="fas fa-phone"></i> (+51) 924 718 538</span>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    
+    <section class="section">
+        <div class="card">
+            <h2>Sobre mí</h2>
+            <p>Estudiante del <strong>Top 15%</strong> de Ingeniería Industrial en la PUCP[cite: 3]. Especialista en Ciencia de Datos aplicada a Macro-Finanzas con sólida experiencia en automatización y Power BI[cite: 3, 4]. He liderado proyectos que reducen tiempos de procesamiento en un 98%[cite: 16].</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Experiencia Destacada</h2>
+        
+        <div class="card">
+            <h3>Análisis de Datos y Gestión Financiera - Escuela de Posgrado PUCP</h3>
+            <p><strong>Set 2025 - Actualidad</strong> [cite: 10]</p>
+            <ul>
+                <li>Gestión de presupuestos y análisis de rentabilidad para programas de posgrado[cite: 11].</li>
+                <li><strong>Logro:</strong> Creé "Zeus Analytics", una App en Python que consolida +100 bases de datos en minutos[cite: 15, 16].</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Asistente de Datos - ADEIN PUCP</h3>
+            <p><strong>Oct 2024 - Dic 2024</strong> [cite: 22]</p>
+            <ul>
+                <li>Diseño de dashboards en Power BI que redujeron el tiempo de análisis en un 30%[cite: 23, 26].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Habilidades Técnicas</h2>
+        <div class="card">
+            <div>
+                <span class="tag">Python (Avanzado) [cite: 38]</span>
+                <span class="tag">SQL (Avanzado) [cite: 42]</span>
+                <span class="tag">Power BI (Avanzado) [cite: 37]</span>
+                <span class="tag">Excel (Avanzado) [cite: 36]</span>
+                <span class="tag">Machine Learning [cite: 33]</span>
+                <span class="tag">R Studio [cite: 40]</span>
+                <span class="tag">Looker Studio [cite: 46]</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Educación</h2>
+        <div class="card">
+            <p><strong>Ingeniería Industrial (9no ciclo)</strong> - PUCP [cite: 29]</p>
+            <p><strong>Ciencia de Datos en Macro-Finanzas</strong> - Q-LAB & Fin-LAB (Becario por excelencia) [cite: 30, 32]</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Andrés Padilla. Construido con GitHub Pages.</p>
+</footer>
+
 </body>
 </html>
